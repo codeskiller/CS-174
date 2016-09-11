@@ -1,1 +1,76 @@
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="stylesheet.css"/> 
+	<img rel= "favicon" type="image/x-icon" href="favicon.ico"/>
+	<title>Conspiracy Theory</title>
+	
+</head>
+<body>
+	<p>
+		<img rel="icon" type="display: block" width= "200" height= "250" src="icon.jpg"/>
+	</p>
+	<div id="menu" class="menu">
 
+			<ul><span id="main"><a href="index.html"> Main Page</span></ul>
+			<ul><span id="content"><a href="https://en.wikipedia.org/wiki/Portal:Current_events"> Current Events</span></ul>
+			<ul><span id="Featured content"><a href="https://en.wikipedia.org/wiki/Portal:Featured_content">Featured content</span></ul>
+			<ul><span id="Link to Wikipedia"><a href="https://en.wikipedia.org/wiki/Conspiracy_theory">Wikipedia</span></ul>
+	</div>
+	<div class="header">
+	<ul class="tab">
+		<span class="fa fa-university" aria-hidden="true"></span>
+		<li><a href="#" class=tablinks" onclick= "openTab(event,'Home')">Home</a></li>
+		<li><a href="#" class=tablinks" onclick= "openTab(event,'Conspiracy1')">Conspiracy 1</a></li>
+		<li><a href="#" class=tablinks" onclick= "openTab(event,'Conspiracy2')">Conspiracy 2</a></li>
+		<li><a href="#" class=tablinks" onclick= "openTab(event,'Conspiracy3')">Conspiracy 3</a></li>
+
+	<div id="Home" class="HomeContent">
+
+			<h3>Conspiracy Theory</h3>
+			<p>A <b>conspiracy theory</b> is a belief that a secret conspiracy has actually been decisive in producing a political event or evil outcome which the theorists strongly disapprove of.[3] The conspiracy theory typically identifies the conspirators, provides evidence that supposedly links them together with an evil plan to harm the body politic, and may also point to a supposed <a href = "https://en.wikipedia.org/wiki/Cover-up">cover up</a> by authorities or media who should have stopped the conspiracy. The duty of the theorist is to pick from a myriad of facts and assumptions and reassemble them to form a picture of the conspiracy, as in a jigsaw puzzle. A theorist may publicly identify specific conspirators, and if they deny the allegations that is evidence they have been sworn to secrecy and are probably guilty. Historian Gordon Wood argues that since the Enlightenment of the 18th century, conspiracy theorists always assume that major evil events have been orchestrated and planned, and cannot have happened accidentally or coincidentally or as an <a href="https://en.wikipedia.org/wiki/Unintended_consequences" >unintended consequence </a> of an innocent plan. That is, the jigsaw puzzle really does have a correct solution that ingenious detectives can discover.[4]</p>
+
+
+	</div>
+	<div id="Conspiracy1" class="tabcontent">
+		<h3>Bermuda Triangle</h3>
+		<p> Whenever anyone uses the word ‘aliens’ or ‘UFOs’ to explain anything, the human brain is at once simultaneously perked up with interest on the story and ready with a negative indignation to shoot it down as soon as it’s finished! Yet, despite no evidence that aliens actually exist, many Bermuda Triangle theorists explain events such as what happened with the Mary Celeste or The Cyclops, with alien interest in us humans and our activities! Apparently, aliens are so interested in studying humans that they really love abducting a few once in a while to conduct their research on them. It seems that around the time of the mysterious disappearances here, they were particularly active in the region, making it their favorite human abduction spot. UFOs of course (alien spaceships), even had the power to teleport objects such as large ships and planes, which explains why no one has ever even found any floating debris or the likes.</p>
+		
+	</div>
+	</ul>
+	<div id="Conspiracy2" class="tabcontent">
+		<h3>Conspiracy 2</h3>
+		<p> add you conspiracy 2 here</p>
+	</div>
+	<div id="Conspiracy2" class="tabcontent">
+		<h3>Conspiracy 2</h3>
+		<p> add you conspiracy 1 here</p>
+	</div>
+	<div id="Conspiracy3" class="tabcontent">
+		<h3>Conspiracy 2</h3>
+		<p> add you conspiracy 1 here</p>
+	</div>
+
+	</div>
+
+	<!--function to show content when it is clicked on tabs-->
+	<script>
+	function openTab(event, theory) {
+	    var i, tabcontent, tablinks;
+	    tabcontent = document.getElementsByClassName("HomeContent");
+	    tabcontent2 = document.getElementsByClassName("tabcontent");
+	    for (i = 0; i < tabcontent.length; i++) {
+	        tabcontent[i].style.display = "none";
+	    }
+	    for (i = 0; i < tabcontent2.length; i++) {
+	        tabcontent2[i].style.display = "none";
+	    }
+	    tablinks = document.getElementsByClassName("tablinks");
+	    for (i = 0; i < tablinks.length; i++) {
+	        tablinks[i].className = tablinks[i].className.replace(" active", "");
+	    }
+
+	    document.getElementById(theory).style.display = "block";
+	    event.currentTarget.className += " active";
+	}
+	</script>
+</body>
