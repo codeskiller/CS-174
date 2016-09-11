@@ -20,6 +20,45 @@ h3 {
 	color: white;
 
 }
+#logo img {
+	width: 14em;
+	height: 16em;
+	float: left;
+}
+.slideshow-container {
+  max-width: 67em;
+  max-height: 20em;
+  margin-left: 14em;
+  position: relative;
+ 
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.active {
+  background-color: #717171;
+}
+/* Fading animation*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 a {
 	color:blue;
 }
@@ -102,9 +141,9 @@ ul.tab {
 
 .header {
     
-    padding: .7rem 0 0;
+    padding: 0rem 0 0;
     margin: 0 0 0 220px;
-    height: 3.3125rem;
+    height: 3rem;
     font-family: appleLogo,sans-serif;
     z-index: 25;
 }
