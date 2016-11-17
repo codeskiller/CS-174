@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PasteChart</title>
+</head>
+<body>
+<h1>PasteChart</h1>
+<h1>Share your data in charts</h1>
+<label for='textfield'>Chart Title</label>
+<input type='textfield' id="title">
+<div id="top">
+	</div>
+	<br/>
+<textarea id='data' placeholder='Enter a string value one per line with a comma' rows="50" cols="80"> </textarea>
+<button type='submit' onclick='share()'>Share</button>
+<!--
+first coordinate represent a text label (can involve numbers, but no comma)
+remaning coordinates represent values correspond to that text label up to 5 sourses.
+Example: textlabel have (Jan, Feb,etc) value correspond to poupulation of rabit and wolf 
+	Jan, 600, 5.4
+	Feb, 450, 5.0
+on every row, first corrdinate != ""
+remaining coordinate can be = 
+-->
+<script type="text/javascript">
+
+	function share() {
+		var userinput = document.getElementById('data').value;
+		var title = document.getElementById('title').value;
+
+		//check data is the right format when user input;
+		//you should write couple Simpletest unit to test for server side
+	
+		if (data is not right format) {
+			var mgs = "data is not in the right format";
+			clear(); // clear version of data. Im not sure if this is right
+			return alert(mgs);
+			
+		}
+		else {
+			var datas = {
+				algo: "md5",
+				title: title,
+				inputdata: inputdata 
+			}
+			$.post("storeDatabase.php", datas); // pass data to php file to store into database
+			
+		}
+</script>
+
+</body>
+</html>

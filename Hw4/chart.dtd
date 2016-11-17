@@ -1,0 +1,10 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!ELEMENT PasteChart (chart*) >
+<!ELEMENT chart (ChartTitle, data*, url) >
+<!ELEMENT ChartTitle (#PCDATA) >
+<!ELEMENT data (#PCDATA) >
+<!ELEMENT url ANY >
+<!ATTLIST topic fading (true|false) #REQUIRED>
+<!ENTITY CS "computer science" >
+
+
