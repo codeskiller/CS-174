@@ -1,3 +1,5 @@
+How to add Simpletest greater than or equal version 1.1 to composer.json?  - Assigned to Daniel
+
 Run: 
 php composer.phar require --dev --prefer-dist simpletest/simpletest "^1.1"
 
