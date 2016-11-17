@@ -1,1 +1,7 @@
+What does folder structure look like? - Assigned to Daniel
 
+-Hw4
+  issues
+  vendors
+ 
+  
