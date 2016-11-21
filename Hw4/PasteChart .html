@@ -11,7 +11,7 @@
 <div id="top">
 	</div>
 	<br/>
-<textarea id='data' placeholder='Enter a string value one per line with a comma' rows="50" cols="80"> </textarea>
+<textarea id='data' placeholder='Enter a string value one per line with a comma' rows="50" cols="80"></textarea>
 <button type='submit' onclick='share()'>Share</button>
 <!--
 first coordinate represent a text label (can involve numbers, but no comma)
@@ -46,6 +46,45 @@ remaining coordinate can be =
 			$.post("storeDatabase.php", datas); // pass data to php file to store into database
 			
 		}
+
+		
+var x = document.getElementById("data").value;
+        var str = x;
+        var arr = str.split(",");
+        
+        var first = arr[0];
+        var second = arr[1];
+        var third = arr[2];
+        var forth = arr[3];
+        var fifth = arr[4];
+        var sixth = arr[5];
+        var seventh = arr[6];
+
+        if ( seventh == null){
+            if ( !parseInt(first) && parseInt(second) 
+                && parseInt(third) && parseInt(forth) &&
+                parseInt(fifth) && parseInt(sixth) ) {
+            alert("Your data has been shared and submiited");
+        }  else if ( !parseInt(first) && parseInt(second) 
+                && parseInt(third) && parseInt(forth) &&
+                parseInt(fifth) ) {
+            alert("Your data has been shared and submiited");
+        } else if ( !parseInt(first) && parseInt(second) 
+                && parseInt(third) && parseInt(forth)) {
+            alert("Your data has been shared and submiited");
+        } else if ( !parseInt(first) && parseInt(second) 
+                && parseInt(third)) {
+            alert("Your data has been shared and submiited");
+        } else if ( !parseInt(first) && parseInt(second)) {
+            alert("Your data has been shared and submiited");
+        }
+        else {
+            alert("Can't share your data, Hint: first value must be string following with any numbers up to 5");
+        }
+
+        } else {
+            alert("You can't have more than 5 values after string");
+        }
 </script>
 
 </body>
